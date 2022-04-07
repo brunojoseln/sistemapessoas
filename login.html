@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>Login</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,12 +19,27 @@
             </ul>
         </nav>
     </header>
-        <button id="generate">
-            Generate User
-        </button>
-        <div id="people">
-        </div>
+    <h1>Login</h1>
+    <form>
+        <label for="email">
+            Email:
+        </label>
+        <input id="email" type="text">
+        </br>
 
-    <script src="add-user.js"></script>
+        <label for="password">
+            Password:
+        </label>
+        <input id="password" type="password">
+        </br>
+        
+        <small id="message">
+            Senha inválida
+        </small>
+        </br>
+
+        <button id="login" type="submit">Login</button>
+    </form>
+    <script src="login-validation.js"></script>
 </body>
 </html>
